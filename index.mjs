@@ -23,7 +23,7 @@ app.listen(port, () => {
     console.log('Executing API request at 23:52');
     try {
       // Make the HTTP request
-      const response = await axios.get('http://localhost:3000/sendapi/handleContestFetch');
+      const response = await axios.get('https://code-chef-contest-reminder.onrender.com/sendapi/handleContestFetch');
       console.log('API Response:', response.data.message);
     } catch (error) {
       console.error('Error:', error.message);
