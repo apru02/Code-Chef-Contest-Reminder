@@ -2,7 +2,8 @@ import express from "express";
 import fetch from "node-fetch";
 import twilio from "twilio";
 
-
+import dotenv from "dotenv";
+dotenv.config();
 const router = express.Router();
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
